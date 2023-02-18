@@ -1,4 +1,4 @@
-# Study repository for Banco PAN Java Developer Bootcamp
+# Study repository - Banck PAN - Java Developer
 
 ## Useful links:
 
