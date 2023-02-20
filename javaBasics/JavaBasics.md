@@ -1,7 +1,10 @@
 # Java Basics
 
 ## Class name:
-first letter in uppercase and second letter in lowercase ex:
+
+The class name should start with a capital letter and use camelCase.
+
+Example:
 
 public class MyClass {
 	}
@@ -74,7 +77,8 @@ public class MyUtilClass {
 
 example:
 
-public class Person {
+    public class Person {
+
     private boolean isActive;
     
     public boolean isActive() {
