@@ -1,6 +1,6 @@
 # Design Patterns
 
-## Class name:
+## About:
 
 Design patterns are reusable Object-Oriented solutions to commonly occurring software design problems.
 
@@ -8,17 +8,19 @@ The main reference book for design patterns is "Design Patterns: Elements of Reu
 
 In addition to the Gang of Four book, there are other notable books on design patterns, such as "Head First Design Patterns" by Eric Freeman and Elisabeth Robson, "Patterns of Enterprise Application Architecture" by Martin Fowler, and "Domain-Driven Design: Tackling Complexity in the Heart of Software" by Eric Evans.
 
-## Main:
-The main class is the entry point of the program. The main class contains the main method
+## Design Patterns Categories:
 
-    public static void main(String[] args)
+Design patterns are typically classified into three main categories:
 
-The main method takes a parameter args (which is an array of strings) that can be used to pass command-line arguments to the program.
+Creational patterns: These patterns are concerned with object creation mechanisms, trying to create objects in a manner that is suitable for a given situation. Creational patterns help to decouple the client code from the objects it needs to instantiate, thereby making it easier to change the object creation process without affecting the rest of the code. Examples of creational patterns include **Singleton**, Factory Method, Abstract Factory, Builder, and Prototype.
 
-## Naming Convention in JAVA
-The naming conventions are a set of rule used to name clases, methods, variable and other elements in Java.
+Structural patterns: These patterns deal with object composition and help to define how objects can be composed to form larger structures or systems. Structural patterns provide ways to simplify the design of complex systems by identifying simple relationships between objects. Examples of structural patterns include Adapter, Bridge, Composite, Decorator, **Facade**, Flyweight, and Proxy.
 
-1 - Class names shoud start with an uppercase and use CamelCase.
+Behavioral patterns: These patterns are concerned with communication between objects and how they collaborate to achieve a common goal. Behavioral patterns help to define how objects interact with one another and how they respond to changes in the system. Examples of behavioral patterns include Chain of Responsibility, Command, Interpreter, Iterator, Mediator, Memento, Observer, State, **Strategy**, Template Method, and Visitor.
+
+## Singleton
+
+The Singleton pattern is a creational pattern that ensures that only one instance of a class is created and provides a global point of access to that instance. This pattern is useful in situations where you need to ensure that there is only one instance of a class in your application, such as managing a connection to a database or controlling access to a shared resource.
 
 example:
 
