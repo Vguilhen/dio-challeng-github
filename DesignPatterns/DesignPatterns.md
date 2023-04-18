@@ -24,18 +24,18 @@ The Singleton pattern is a creational pattern that ensures that only one instanc
 
 example:
 
-    public class MyClassName {
-        // class implementation
-    }
+    public class Singleton {
+    private static Singleton instance;
 
-    public class Person {
-        // class implementation
-    }
+    private Singleton() {}
 
-    public class PremiumCustomer {
-        // class implementation
+    public static Singleton getInstance() {
+        if (instance == null) {
+            instance = new Singleton();
+        }
+        return instance;
     }
-
+....
 2 - Variable and method names should start with a lowercase letter and use CamelCase.
 
 example:
