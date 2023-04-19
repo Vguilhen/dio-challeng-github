@@ -35,7 +35,22 @@ example:
         }
         return instance;
     }
+
+## Facede
+
+The Facade design pattern is a structural design pattern that aims to provide a simplified interface for a complex set of interfaces of a system.
+
+In other words, the Facade pattern provides an abstraction layer that hides the underlying complexity of a system and offers a simplified interface to the end user. This helps to reduce the complexity of client code, making it easier to use and understand.
+
+The Facade pattern is often used in large and complex systems, where there are many different components and interfaces. In these cases, creating a facade can be useful to simplify the interaction between the client and the system. The facade acts as an intermediary layer between the client and the underlying components, hiding the complexity of these components and exposing only a simplified interface to the client.
+
+In addition to simplifying the interaction with the system, the Facade pattern can also improve code maintenance by making it easier to make changes to a complex system. By creating a facade for a system, developers can change the implementation of the underlying components without affecting the facade interface. This means that client code does not need to be changed every time there is a change in the internal components of the system.
+
+In summary, the Facade pattern is a useful approach to simplifying the complexity of large and complex systems. It provides a simplified interface to the client and helps improve code maintenance by making it easier to update and modify.
+
 ....
+
+
 2 - Variable and method names should start with a lowercase letter and use CamelCase.
 
 example:
