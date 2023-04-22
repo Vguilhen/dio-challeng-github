@@ -24,17 +24,42 @@ The Singleton pattern is a creational pattern that ensures that only one instanc
 
 example:
 
-    public class Singleton {
-    private static Singleton instance;
+    public class SingletonLazy {
 
-    private Singleton() {}
+    private static SingletonLazy instance;
+    private SingletonLazy(){
+        super();
+    }
 
-    public static Singleton getInstance() {
+    public static SingletonLazy getInstance(){
         if (instance == null) {
-            instance = new Singleton();
+            instance = new SingletonLazy();
         }
         return instance;
+        }
     }
+
+    public class SingletonEager {
+    private static SingletonEager instance = new SingletonEager();
+    private SingletonEager(){
+    super();
+        }
+    public static SingletonEager getInstance(){
+    return instance;
+        }
+    }
+
+    public class SingletonLazyHolder {
+    public static class InstanceHolder {
+    public static SingletonLazyHolder instance = new SingletonLazyHolder();
+        }
+    private SingletonLazyHolder() {
+    super();
+        }
+        public static SingletonLazyHolder getInstance(){
+            return InstanceHolder.instance;
+    }
+
 
 ## Facede
 
