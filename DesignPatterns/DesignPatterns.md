@@ -73,112 +73,14 @@ In addition to simplifying the interaction with the system, the Facade pattern c
 
 In summary, the Facade pattern is a useful approach to simplifying the complexity of large and complex systems. It provides a simplified interface to the client and helps improve code maintenance by making it easier to update and modify.
 
-....
+## Strategy
 
+The Strategy pattern is a behavioral design pattern that allows different algorithms or strategies to be selected at runtime based on a specific context. This pattern enables the encapsulation of different algorithms or behaviors, allowing them to be easily interchanged without modifying the code that uses them.
 
-2 - Variable and method names should start with a lowercase letter and use CamelCase.
+The Strategy pattern involves defining a family of algorithms, encapsulating each one as an object, and making them interchangeable at runtime. In this pattern, a context object is responsible for selecting and invoking the appropriate strategy object based on the current context. The context object is not aware of the details of the algorithms or strategies, but it delegates the responsibility of executing the algorithm to the selected strategy object.
 
-example:
+One of the main advantages of the Strategy pattern is that it promotes the principle of separation of concerns, allowing each algorithm or strategy to be developed independently and tested separately. This improves the flexibility and maintainability of the code, as changes to one algorithm or strategy do not affect the others. Additionally, the Strategy pattern promotes code reuse by encapsulating reusable algorithms or behaviors into separate objects that can be shared across different contexts.
 
-    public class MyClass {
-        private int myVariable;
-    
-    public void doSomething() {
-        // method implementation
-        }
-    
-    public int getMyVariable() {
-        return myVariable;
-        }
-    }
+The Strategy pattern is commonly used in situations where different algorithms or strategies may be required based on different contexts or user preferences. For example, a search engine may use different search algorithms based on the user's search query or search preferences. By using the Strategy pattern, the search engine can easily interchange different search algorithms without modifying the code that invokes them.
 
-3 - Constant names should be written in uppercase letters separated by underscore:
-
-example:
-
-    public class Constants {
-        public static final double PI_VALUE = 3.14159;
-        public static final int MAX_SIZE = 100;
-    }
-
-4 - Package names should be in lowercase letters and follow the class naming convention.
-
-example:
-
-    package com.myapp.util;
-
-    import com.myapp.util.MyClass;
-    import com.myapp.util.MyOtherClass;
-
-    public class MyUtilClass {
-        // class implementation
-    }
-
-5 - Methods that return a boolean value should start with "is" or "has".
-
-example:
-
-    public class Person {
-        private boolean isActive;
-    
-    public boolean isActive() {
-        return isActive;
-        }
-    
-    public boolean hasPermission() {
-        // implementation
-        }
-    }
-
-6 - Enumeration (enum) names should be written in uppercase letters separated by underscore.
-
-example:
-
-    public enum DayOfWeek {
-        MONDAY,
-        TUESDAY,
-        WEDNESDAY,
-        THURSDAY,
-        FRIDAY,
-        SATURDAY,
-        SUNDAY
-    }
-
-7 - Method parameter names should follow the variable naming convention.
-
-example:
-
-    public class MyClass {
-        public double calculateAverage(double[] grades) {
-            // implementation
-        }
-    }
-
-## Patterns for variables
-
-1 - a final variable can never be changed and must be written in uppercase:
-
-example:
-
-    final String BR = "Brasil";
-
-2 - A valid variable declaration must start with a letter, underscore, or dollar sign, and can be followed by any combination of letters, numbers, underscores, or dollar signs.
-
-example: 
-Valid variable declarations:
-
-    int myVariable;
-    double myDouble;
-    String myString;
-    boolean isActive;
-    char firstLetter;
-    float $myFloat;
-
-Invalid variable declarations:
-
-    int 123myVariable; // starts with a number
-    double my-Double; // contains a dash
-    String my string; // contains a space
-    boolean is active; // contains a space
-    char first letter; // contains a space
-    float my$Float$; // contains consecutive dollar signs
+In conclusion, the Strategy pattern is a useful design pattern for implementing interchangeable algorithms or strategies at runtime. It promotes the principle of separation of concerns, code reuse, and flexibility, and is commonly used in situations where different algorithms or strategies may be required based on different contexts or user preferences.
